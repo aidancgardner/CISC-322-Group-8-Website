@@ -1,0 +1,113 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+}
+body
+{
+    overflow: hidden;
+    min-height: 100vh;
+    background: rgb(65, 65, 65);
+}
+.title-block 
+{
+    text-align: center;
+    background: #333;
+    padding: 20px;
+    color: #33a3ee;
+    width: 100%; 
+    position: fixed;
+    top: 0;
+    z-index: 1; 
+}
+.title-block h1 
+{
+    font-size: 24px;
+    margin: 0;
+}
+ul 
+{
+    margin-top: 80px; 
+}
+ul
+{
+    position: relative;
+    transform: skewY(-15deg);
+}
+ul li
+{
+    position: fixed;
+    list-style: none;
+    bottom: -600px;
+    left: 100px;
+    width: 100px;
+    height: 100px;
+    background: #3e3f46;
+    padding: 15px;
+    z-index: var(--i);
+    transition: 0.5s;
+    border-radius: 5px;
+}
+ul li:hover
+{
+    background: #33a3ee;
+    transform: translateX(50px);
+}
+ul li::before
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 100%;
+    background: #2e3133;
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.5s;
+}
+ul li:hover::before
+{
+    background: #1f5378;
+}
+ul li::after
+{
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background: #35383e;
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+}
+ul li:hover::after
+{
+    background: #2982b9;
+}
+ul li a
+{
+    text-decoration: none;
+    color: #999;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index:2 ;
+}
+ul li:hover a
+{
+    color: #fff;
+}
+ul li:last-child::after
+{
+    box-shadow: -160px 160px 20px rgba(0,0,0,0.25);
+}
