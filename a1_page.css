@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body {
+    position: relative;
+    min-height: 100vh;
+    background: rgb(65, 65, 65);
+}
+
+.title-block {
+    text-align: center;
+    background: #333;
+    padding: 20px;
+    color: #33a3ee;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+.title-block h1 {
+    font-size: 24px;
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the items horizontally */
+}
+
+ul li {
+    margin-right: 20px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #33a3ee;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+ul li:hover a {
+    color: #fff;
+}
+
+.footer {
+    position: absolute;
+    bottom: 400px; /* Adjusted to lower the footer by 20px */
+    width: 100%;
+    background-color: #333;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    align-items: center; /* Center items vertically */
+}
+
+.footer-links li {
+    margin: 0 10px;
+}
+
+.footer-links li a {
+    color: #33a3ee;
+    text-decoration: none;
+}
+
+.footer-links li a:hover {
+    color: #fff;
+}
+
+/* Adjusted CSS for the iframe in the footer */
+iframe {
+    margin: 20px auto; /* Center the iframe horizontally */
+    display: block;
+    width: 80%; /* Adjusted width to 80% */
+    height: 400px; /* Adjusted height as required */
+}
